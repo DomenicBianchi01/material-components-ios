@@ -27,14 +27,13 @@ let package = Package(
                     .target(name:"Math"),
                     "MDFInternationalization"
                 ],
-                path: "components/Tabs",
+                path: "components/Tabs/",
                 exclude: [
                     "src/TabBarView",
                     "src/Theming",
                     "src/TypographyThemer"
                 ],
-                sources: [ "src" ],
-                publicHeadersPath: "src"),
+                sources: [ "src" ]),
         .target(name: "AvailabilityT",
                 dependencies:[],
                 path: "components/AvailabilityT"),
