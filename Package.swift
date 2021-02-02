@@ -27,14 +27,7 @@ let package = Package(
                     .target(name:"Typography"),
                     .target(name:"Math"),
                     "MDFInternationalization"
-                ],
-                path: "components/Tabs/",
-                exclude: [
-                    "src/TabBarView",
-                    "src/Theming",
-                    "src/TypographyThemer"
-                ],
-                sources: [ "src" ]),
+                ]),
         .target(name: "AvailabilityT",
                 dependencies:[],
                 path: "components/AvailabilityT"),
