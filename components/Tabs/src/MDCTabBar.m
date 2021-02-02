@@ -14,7 +14,7 @@
 
 #import "MDCTabBar.h"
 
-#import <MDFInternationalization/MDFInternationalization.h>
+#import "MDFInternationalization"
 
 #import "private/MDCItemBar.h"
 #import "private/MDCItemBarAlignment.h"
