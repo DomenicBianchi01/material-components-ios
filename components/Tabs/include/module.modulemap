@@ -1,4 +1,4 @@
-module MaterialComponents {
+module MaterialComponents2 {
   requires objc, objc_arc
 
   explicit module MaterialTabs {
