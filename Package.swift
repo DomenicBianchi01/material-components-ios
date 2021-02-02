@@ -6,7 +6,8 @@ let package = Package(
     name: "Material Components iOS",
     platforms: [ .iOS(.v10) ],
     products: [
-        .library(name: "MaterialComponents", targets: ["MaterialTextFields", "MaterialTabs"]),
+        .library(name: "MaterialTextFields", targets: ["MaterialTextFields"]),
+        .library(name: "MaterialTabs", targets: ["MaterialTabs"])
     ],
     dependencies:[
         .package(url:"https://github.com/grupopulpo/material-text-accessibility-ios", from: "2.0.0"),
@@ -32,7 +33,8 @@ let package = Package(
                     "src/Theming",
                     "src/TypographyThemer"
                 ],
-                sources: [ "src" ]),
+                sources: [ "src" ],
+                publicHeadersPath: "src"),
         .target(name: "AvailabilityT",
                 dependencies:[],
                 path: "components/AvailabilityT"),
