@@ -15,7 +15,7 @@
 #import "MDCItemBarCell.h"
 #import "MDCItemBarCell+Private.h"
 
-#import <MDFInternationalization/MDFInternationalization.h>
+#import "MDFInternationalization.h"
 
 #import "MDCItemBarBadge.h"
 #import "MDCItemBarStringConstants.h"

@@ -32,7 +32,8 @@ let package = Package(
                     "src/Theming",
                     "src/TypographyThemer"
                 ],
-                sources: [ "src" ]),
+                sources: [ "src" ],
+                publicHeadersPath: "src"),
         .target(name: "AvailabilityT",
                 dependencies:[],
                 path: "components/AvailabilityT"),
