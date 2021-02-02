@@ -16,6 +16,7 @@ let package = Package(
     targets: [
         .target(name: "MaterialTabs",
                 dependencies: [
+                    .target(name:"AvailabilityT"),
                     .target(name:"AnimationTiming"),
                     .target(name:"Elevation"),
                     .target(name:"Ink"),
