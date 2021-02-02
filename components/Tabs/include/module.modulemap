@@ -1,0 +1,10 @@
+module MaterialComponents {
+  requires objc, objc_arc
+
+  explicit module MaterialTabs {
+    umbrella header "MaterialTabs.h"
+  }
+
+
+  export *
+}
