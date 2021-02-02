@@ -6,8 +6,7 @@ let package = Package(
     name: "Material Components iOS",
     platforms: [ .iOS(.v10) ],
     products: [
-        .library(name: "MaterialTextFields", targets: ["MaterialTextFields"]),
-        .library(name: "MaterialTabs", targets: ["MaterialTabs"])
+        .library(name: "MaterialComponents", targets: ["MaterialTextFields", "MaterialTabs"]),
     ],
     dependencies:[
         .package(url:"https://github.com/grupopulpo/material-text-accessibility-ios", from: "2.0.0"),
