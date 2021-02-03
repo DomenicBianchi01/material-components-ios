@@ -12,13 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "MDCTabBarIndicatorContext.h"
-#import "MDCTabBar.h"
-#import "MDCTabBarAlignment.h"
-#import "MDCTabBarControllerDelegate.h"
-#import "MDCTabBarDelegate.h"
-#import "MDCTabBarIndicatorAttributes.h"
-#import "MDCTabBarIndicatorTemplate.h"
-#import "MDCTabBarItemAppearance.h"
-#import "MDCTabBarUnderlineIndicatorTemplate.h"
-#import "MDCTabBarViewController.h"
+#import <UIKit/UIKit.h>
+
+/** Appearance for content within tab bar items. */
+typedef NS_ENUM(NSInteger, MDCTabBarItemAppearance) {
+  /** Tabs are shown as titles. Badges are not supported for this appearance. */
+  MDCTabBarItemAppearanceTitles,
+
+  /** Tabs are shown as images. */
+  MDCTabBarItemAppearanceImages,
+
+  /** Tabs are shown as images with titles underneath. */
+  MDCTabBarItemAppearanceTitledImages,
+};

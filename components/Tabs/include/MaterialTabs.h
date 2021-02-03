@@ -12,13 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "MDCTabBarIndicatorContext.h"
-#import "MDCTabBar.h"
-#import "MDCTabBarAlignment.h"
-#import "MDCTabBarControllerDelegate.h"
-#import "MDCTabBarDelegate.h"
-#import "MDCTabBarIndicatorAttributes.h"
-#import "MDCTabBarIndicatorTemplate.h"
-#import "MDCTabBarItemAppearance.h"
-#import "MDCTabBarUnderlineIndicatorTemplate.h"
-#import "MDCTabBarViewController.h"
+#import "../src/MDCTabBar.h"

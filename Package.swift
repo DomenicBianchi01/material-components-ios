@@ -6,13 +6,27 @@ let package = Package(
     name: "Material Components iOS",
     platforms: [ .iOS(.v10) ],
     products: [
-        .library(name: "MaterialComponents", targets: ["MaterialTextFields"]),
+        .library(name: "MaterialComponents", targets: ["MaterialTextFields", "MaterialTabs"])
     ],
     dependencies:[
         .package(url:"https://github.com/grupopulpo/material-text-accessibility-ios", from: "2.0.0"),
         .package(url:"https://github.com/grupopulpo/material-internationalization-ios", from: "2.0.0")
     ],
     targets: [
+        .target(name: "MaterialTabs",
+                dependencies: [
+                    .target(name:"AvailabilityT"),
+                    .target(name:"AnimationTiming"),
+                    .target(name:"Elevation"),
+                    .target(name:"Ink"),
+                    .target(name:"Palettes"),
+                    .target(name:"Ripple"),
+                    .target(name:"ShadowElevations"),
+                    .target(name:"ShadowLayer"),
+                    .target(name:"Typography"),
+                    .target(name:"Math"),
+                    "MDFInternationalization"
+                ]),
         .target(name: "AvailabilityT",
                 dependencies:[],
                 path: "components/AvailabilityT"),

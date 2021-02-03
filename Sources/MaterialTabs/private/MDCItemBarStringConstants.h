@@ -12,13 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "MDCTabBarIndicatorContext.h"
-#import "MDCTabBar.h"
-#import "MDCTabBarAlignment.h"
-#import "MDCTabBarControllerDelegate.h"
-#import "MDCTabBarDelegate.h"
-#import "MDCTabBarIndicatorAttributes.h"
-#import "MDCTabBarIndicatorTemplate.h"
-#import "MDCTabBarItemAppearance.h"
-#import "MDCTabBarUnderlineIndicatorTemplate.h"
-#import "MDCTabBarViewController.h"
+static NSString *const kMDCItemBarStringKeyAccessibilityTabElementLabel =
+    @"MaterialTabsAccessibilityTabElementLabel";
+
+static NSString *const kMDCItemBarStringKeyAccessibilityTabPositionFormat =
+    @"MaterialTabsAccessibilityTabPositionFormat";
+
+static NSString *const kMDCItemBarStringsTableName = @"MaterialTabs";
